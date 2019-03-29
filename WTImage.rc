@@ -1,0 +1,660 @@
+// Microsoft Visual C++ generated resource script.
+//
+#include "resource.h"
+
+#define APSTUDIO_READONLY_SYMBOLS
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 2 resource.
+//
+#ifndef APSTUDIO_INVOKED
+#include "targetver.h"
+#endif
+#include "afxres.h"
+#include "verrsrc.h"
+
+/////////////////////////////////////////////////////////////////////////////
+#undef APSTUDIO_READONLY_SYMBOLS
+
+/////////////////////////////////////////////////////////////////////////////
+// 中文(简体，中国) resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_CHS)
+LANGUAGE LANG_CHINESE, SUBLANG_CHINESE_SIMPLIFIED
+#pragma code_page(936)
+
+#ifdef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// TEXTINCLUDE
+//
+
+1 TEXTINCLUDE 
+BEGIN
+    "resource.h\0"
+END
+
+2 TEXTINCLUDE 
+BEGIN
+    "#ifndef APSTUDIO_INVOKED\r\n"
+    "#include ""targetver.h""\r\n"
+    "#endif\r\n"
+    "#include ""afxres.h""\r\n"
+    "#include ""verrsrc.h""\r\n"
+    "\0"
+END
+
+3 TEXTINCLUDE 
+BEGIN
+    "#define _AFX_NO_OLE_RESOURCES\r\n"
+    "#define _AFX_NO_TRACKER_RESOURCES\r\n"
+    "#define _AFX_NO_PROPERTY_RESOURCES\r\n"
+    "\r\n"
+    "#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_CHS)\r\n"
+    "LANGUAGE 4, 2\r\n"
+    "#include ""res\\WTImage.rc2""  // 非 Microsoft Visual C++ 编辑的资源\r\n"
+    "#include ""l.CHS\\afxres.rc""      // 标准组件\r\n"
+    "#include ""l.CHS\\afxprint.rc""    // 打印/打印预览资源\r\n"
+    "#endif\r\n"
+    "\0"
+END
+
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Icon
+//
+
+// Icon with lowest ID value placed first to ensure application icon
+// remains consistent on all systems.
+IDR_MAINFRAME           ICON                    "res\\WTImage.ico"
+
+IDR_WTImageTYPE         ICON                    "res\\WTImageDoc.ico"
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Bitmap
+//
+
+IDR_MAINFRAME           BITMAP                  "res\\Toolbar.bmp"
+
+IDR_SHAPETOOL           BITMAP                  "res\\toolbar1.bmp"
+
+IDR_PENSTYLE            BITMAP                  "res\\bmp00001.bmp"
+
+IDR_SIZE_TYPE_COLOR     BITMAP                  "res\\bmp00002.bmp"
+
+IDR_PACKET_TOOLBAR      BITMAP                  "res\\bmp00003.bmp"
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Toolbar
+//
+
+IDR_MAINFRAME TOOLBAR 16, 15
+BEGIN
+    BUTTON      ID_FILE_NEW
+    BUTTON      ID_FILE_OPEN
+    BUTTON      ID_DRAW_SAVE
+    SEPARATOR
+    BUTTON      ID_EDIT_CUT
+    BUTTON      ID_EDIT_COPY
+    BUTTON      ID_EDIT_PASTE
+    SEPARATOR
+    BUTTON      ID_FILE_PRINT
+    BUTTON      ID_APP_ABOUT
+    SEPARATOR
+    BUTTON      ID_UNDO
+    BUTTON      ID_REDO
+END
+
+IDR_SHAPETOOL TOOLBAR 16, 15
+BEGIN
+    BUTTON      ID_DLINE
+    BUTTON      ID_DCURVE
+    BUTTON      ID_DRECT
+    BUTTON      ID_DELLIP
+    BUTTON      ID_DPOLY
+END
+
+IDR_PENSTYLE TOOLBAR 16, 15
+BEGIN
+    BUTTON      ID_PENCIL
+    BUTTON      ID_BALLPEN
+    BUTTON      ID_BRUSHPEN
+    BUTTON      ID_LIGHTPEN
+END
+
+IDR_SIZE_TYPE_COLOR TOOLBAR 16, 15
+BEGIN
+    BUTTON      ID_LINE_WIDTH_SETTING
+    BUTTON      ID_LINE_WIDTH_SETTING
+    BUTTON      ID_COLOR
+END
+
+IDR_PACKET_TOOLBAR TOOLBAR 16, 15
+BEGIN
+    BUTTON      IDM_MAGNIFY
+    BUTTON      IDM_EARSER
+    BUTTON      IDM_BRUSH
+    BUTTON      IDM_PAINT_BUCKET
+    BUTTON      IDM_ADD_TEXT
+    BUTTON      IDM_FONT
+    SEPARATOR
+    BUTTON      IDM_FULL_PAINT
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Menu
+//
+
+IDR_MAINFRAME MENU
+BEGIN
+    POPUP "文件(&F)"
+    BEGIN
+        MENUITEM "新建(&N)\tCtrl+N",              ID_FILE_NEW
+        MENUITEM "打开(&O)...\tCtrl+O",           ID_FILE_OPEN
+        MENUITEM "保存(&S)\tCtrl+S",              ID_DRAW_SAVE
+        MENUITEM "另存为(&A)...",                  ID_FILE_SAVE_AS
+        MENUITEM SEPARATOR
+        MENUITEM "打印(&P)...\tCtrl+P",           ID_FILE_PRINT
+        MENUITEM "打印预览(&V)",                    ID_FILE_PRINT_PREVIEW
+        MENUITEM "打印设置(&R)...",                 ID_FILE_PRINT_SETUP
+        MENUITEM SEPARATOR
+        MENUITEM "最近的文件",                       ID_FILE_MRU_FILE1
+        MENUITEM SEPARATOR
+        MENUITEM "退出(&X)",                      ID_APP_EXIT
+    END
+    POPUP "编辑(&E)"
+    BEGIN
+        MENUITEM "撤消(&U)\tCtrl+Z",              ID_UNDO
+        MENUITEM "重做(&R)\tCtrl+Y",              ID_REDO
+        MENUITEM SEPARATOR
+        MENUITEM "剪切(&T)\tCtrl+X",              ID_EDIT_CUT
+        MENUITEM "复制(&C)\tCtrl+C",              ID_EDIT_COPY
+        MENUITEM "粘贴(&P)\tCtrl+V",              ID_EDIT_PASTE
+    END
+    POPUP "视图(&V)"
+    BEGIN
+        MENUITEM "工具栏(&T)",                     ID_VIEW_TOOLBAR
+        MENUITEM "状态栏(&S)",                     ID_VIEW_STATUS_BAR
+        MENUITEM "图形栏(&P)",                     ID_VIEW_SHAPETOOL
+        MENUITEM "笔型栏(&N)",                     ID_VIEW_PENSTYLETOOLBAR
+        MENUITEM "线规格栏(&L)",                    ID_VIEW_SIZE_TYPE_COLOR
+        MENUITEM "工具包栏(&T)",                    ID_VIEW_PACKET_TOOLBAR
+    END
+    POPUP "图形(&P)"
+    BEGIN
+        MENUITEM "直线",                          ID_DLINE
+        MENUITEM "曲线",                          ID_DCURVE
+        MENUITEM "矩形",                          ID_DRECT
+        MENUITEM "圆角矩形",                        ID_DRRECT
+        MENUITEM "圆弧",                          ID_DARC
+        MENUITEM "圆",                           ID_DROUND
+        MENUITEM "椭圆",                          ID_DELLIP
+        MENUITEM "多边形",                         ID_DPOLY
+        MENUITEM SEPARATOR
+        MENUITEM "选择框",                         ID_DSELECT
+    END
+    POPUP "笔型(&N)"
+    BEGIN
+        MENUITEM "铅笔",                          ID_PENCIL
+        MENUITEM "圆珠笔 ",                        ID_BALLPEN
+        MENUITEM "毡尖笔",                         ID_BRUSHPEN
+        MENUITEM "荧光笔",                         ID_LIGHTPEN
+    END
+    POPUP "线规格(&L)"
+    BEGIN
+        MENUITEM "线型",                          ID_LINE_WIDTH_SETTING
+        MENUITEM "粗细",                          ID_LINE_WIDTH_SETTING
+        MENUITEM "颜色",                          ID_COLOR
+    END
+    POPUP "工具(&T)"
+    BEGIN
+        MENUITEM "放大镜",                         IDM_MAGNIFY
+        MENUITEM "橡皮擦",                         IDM_EARSER
+        MENUITEM "刷子",                          IDM_BRUSH
+        MENUITEM "油漆桶",                         IDM_PAINT_BUCKET
+        MENUITEM "添加文字",                        IDM_ADD_TEXT
+        MENUITEM "字体",                          IDM_FONT
+        MENUITEM SEPARATOR
+        MENUITEM "颜色填充",                        IDM_FULL_PAINT
+    END
+    POPUP "显示图片"
+    BEGIN
+        MENUITEM "显示缩略图",                       ID_SHOWPIC
+    END
+    POPUP "图像处理(&I)"
+    BEGIN
+        MENUITEM "选区(&F)",                      ID_32792
+        MENUITEM "裁剪(&P)",                      ID_32793
+        MENUITEM "抹白",                          ID_32794
+        MENUITEM "手动倾斜矫正",                      ID_32795
+        MENUITEM "横向切分",                        ID_32796
+        MENUITEM "纵向切分",                        ID_32797
+        MENUITEM "合并图像",                        ID_32798
+        MENUITEM SEPARATOR
+        MENUITEM "左旋90度",                       ID_32799
+        MENUITEM "右旋90度",                       ID_Menu32800
+        MENUITEM "旋转180度",                      ID_32801
+        MENUITEM SEPARATOR
+        MENUITEM "内部清除",                        ID_32802
+        MENUITEM "外部清除",                        ID_32803
+        MENUITEM SEPARATOR
+        MENUITEM "智能裁剪",                        ID_32804
+        MENUITEM "去黑边",                         ID_32805
+        MENUITEM "去除装订孔",                       ID_32806
+        MENUITEM "自动倾斜校正",                      ID_32807
+        MENUITEM "反色",                          ID_32808
+        MENUITEM "滤除噪声",                        ID_32809
+        MENUITEM "图像增强",                        ID_32810
+        MENUITEM "图像减弱",                        ID_32811
+        MENUITEM "亮度对比度调整",                     ID_32812
+        MENUITEM SEPARATOR
+        MENUITEM "二值化",                         ID_32813
+        MENUITEM "灰度化",                         ID_32814
+    END
+    POPUP "帮助(&H)"
+    BEGIN
+        MENUITEM "关于 WTImage(&A)...",           ID_APP_ABOUT
+    END
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Accelerator
+//
+
+IDR_MAINFRAME ACCELERATORS
+BEGIN
+    "N",            ID_FILE_NEW,            VIRTKEY, CONTROL
+    "O",            ID_FILE_OPEN,           VIRTKEY, CONTROL
+    "S",            ID_FILE_SAVE,           VIRTKEY, CONTROL
+    "P",            ID_FILE_PRINT,          VIRTKEY, CONTROL
+    "Z",            ID_EDIT_UNDO,           VIRTKEY, CONTROL
+    "X",            ID_EDIT_CUT,            VIRTKEY, CONTROL
+    "C",            ID_EDIT_COPY,           VIRTKEY, CONTROL
+    "V",            ID_EDIT_PASTE,          VIRTKEY, CONTROL
+    VK_BACK,        ID_EDIT_UNDO,           VIRTKEY, ALT
+    VK_DELETE,      ID_EDIT_CUT,            VIRTKEY, SHIFT
+    VK_INSERT,      ID_EDIT_COPY,           VIRTKEY, CONTROL
+    VK_INSERT,      ID_EDIT_PASTE,          VIRTKEY, SHIFT
+    VK_F6,          ID_NEXT_PANE,           VIRTKEY 
+    VK_F6,          ID_PREV_PANE,           VIRTKEY, SHIFT
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog
+//
+
+IDD_ABOUTBOX DIALOGEX 0, 0, 170, 62
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "关于 WTImage"
+FONT 9, "MS Shell Dlg", 0, 0, 0x1
+BEGIN
+    ICON            IDR_MAINFRAME,IDC_STATIC,14,14,21,20
+    LTEXT           "WTImage，1.0 版",IDC_STATIC,42,14,114,8,SS_NOPREFIX
+    LTEXT           "Copyright (C) 2018",IDC_STATIC,42,26,114,8
+    DEFPUSHBUTTON   "确定",IDOK,113,41,50,14,WS_GROUP
+END
+
+IDD_TOPFORMVIEW DIALOGEX 0, 0, 320, 119
+STYLE DS_SETFONT | DS_FIXEDSYS | WS_CHILD
+FONT 9, "MS Shell Dlg", 0, 0, 0x0
+BEGIN
+END
+
+IDD_BOTTOMFORMVIEW DIALOGEX 0, 0, 320, 200
+STYLE DS_SETFONT | DS_FIXEDSYS | WS_CHILD
+FONT 9, "MS Shell Dlg", 0, 0, 0x0
+BEGIN
+END
+
+IDD_DLG_SETTING DIALOGEX 0, 0, 309, 176
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "设置"
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    DEFPUSHBUTTON   "确定",IDOK,252,22,50,14
+    PUSHBUTTON      "取消",IDCANCEL,252,52,50,14
+    LTEXT           "线宽 ：",IDC_TEXT_LINE_WIDTH,31,39,27,8
+    EDITTEXT        IDC_LINE_WIDTH,73,36,40,14,ES_AUTOHSCROLL
+    GROUPBOX        "线型",IDC_TEXT_LINE_STYLE,24,73,126,79
+    CONTROL         "  实线",IDC_RADIO2,"Button",BS_AUTORADIOBUTTON | WS_GROUP,73,89,36,10
+    CONTROL         "  虚线",IDC_RADIO3,"Button",BS_AUTORADIOBUTTON,73,108,36,10
+    CONTROL         "  点线",IDC_RADIO4,"Button",BS_AUTORADIOBUTTON,73,126,36,10
+END
+
+IDD_DLG_MAGNIFY DIALOGEX 0, 0, 309, 114
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "放大镜"
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Version
+//
+
+VS_VERSION_INFO VERSIONINFO
+ FILEVERSION 1,0,0,1
+ PRODUCTVERSION 1,0,0,1
+ FILEFLAGSMASK 0x3fL
+#ifdef _DEBUG
+ FILEFLAGS 0x1L
+#else
+ FILEFLAGS 0x0L
+#endif
+ FILEOS 0x40004L
+ FILETYPE 0x1L
+ FILESUBTYPE 0x0L
+BEGIN
+    BLOCK "StringFileInfo"
+    BEGIN
+        BLOCK "080404b0"
+        BEGIN
+            VALUE "CompanyName", "TODO: <公司名>"
+            VALUE "FileDescription", "WTImage"
+            VALUE "FileVersion", "1.0.0.1"
+            VALUE "InternalName", "WTImage.exe"
+            VALUE "LegalCopyright", "TODO:  (C) <公司名>。  保留所有权利。"
+            VALUE "OriginalFilename", "WTImage.exe"
+            VALUE "ProductName", "TODO: <产品名>"
+            VALUE "ProductVersion", "1.0.0.1"
+        END
+    END
+    BLOCK "VarFileInfo"
+    BEGIN
+        VALUE "Translation", 0x804, 1200
+    END
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// DESIGNINFO
+//
+
+#ifdef APSTUDIO_INVOKED
+GUIDELINES DESIGNINFO
+BEGIN
+    IDD_ABOUTBOX, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 163
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 55
+    END
+
+    IDD_TOPFORMVIEW, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 313
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 112
+        HORZGUIDE, 7
+    END
+
+    IDD_BOTTOMFORMVIEW, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 313
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 193
+    END
+
+    IDD_DLG_SETTING, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 302
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 169
+    END
+
+    IDD_DLG_MAGNIFY, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 302
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 107
+    END
+END
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// AFX_DIALOG_LAYOUT
+//
+
+IDD_BOTTOMFORMVIEW AFX_DIALOG_LAYOUT
+BEGIN
+    0
+END
+
+IDD_TOPFORMVIEW AFX_DIALOG_LAYOUT
+BEGIN
+    0
+END
+
+IDD_DLG_SETTING AFX_DIALOG_LAYOUT
+BEGIN
+    0
+END
+
+IDD_DLG_MAGNIFY AFX_DIALOG_LAYOUT
+BEGIN
+    0
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Cursor
+//
+
+IDC_CURSOR_TEXT         CURSOR                  "res\\cursor1.cur"
+
+IDC_CURSOR_EARSE        CURSOR                  "res\\cursor2.cur"
+
+IDC_CURSOR_MAGNIFY      CURSOR                  "res\\cur00001.cur"
+
+IDC_CURSOR_LIGHTPEN     CURSOR                  "res\\cur00002.cur"
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// String Table
+//
+
+STRINGTABLE
+BEGIN
+    IDP_OLE_INIT_FAILED     "OLE 初始化失败。  请确保 OLE 库是正确的版本。"
+END
+
+STRINGTABLE
+BEGIN
+    IDR_MAINFRAME           "WTImage\n\nWTImage\n\n\nWTImage.Document\nWTImage.Document"
+END
+
+STRINGTABLE
+BEGIN
+    AFX_IDS_APP_TITLE       "WTImage"
+    AFX_IDS_IDLEMESSAGE     "就绪"
+END
+
+STRINGTABLE
+BEGIN
+    ID_INDICATOR_EXT        "EXT"
+    ID_INDICATOR_CAPS       "CAP"
+    ID_INDICATOR_NUM        "NUM"
+    ID_INDICATOR_SCRL       "SCRL"
+    ID_INDICATOR_OVR        "OVR"
+    ID_INDICATOR_REC        "REC"
+END
+
+STRINGTABLE
+BEGIN
+    ID_FILE_NEW             "创建新文档\n新建"
+    ID_FILE_OPEN            "打开现有文档\n打开"
+    ID_FILE_CLOSE           "关闭活动文档\n关闭"
+    ID_FILE_SAVE            "保存活动文档\n保存"
+    ID_FILE_SAVE_AS         "用新名称保存活动文档\n另存为"
+    ID_FILE_PAGE_SETUP      "更改打印选项\n页面设置"
+    ID_FILE_PRINT_SETUP     "更改打印机选项和打印选项\n打印设置"
+    ID_FILE_PRINT           "打印活动文档\n打印"
+    ID_FILE_PRINT_DIRECT    "使用当前选项打印活动文档\n快速打印"
+    ID_FILE_PRINT_PREVIEW   "显示整页\n打印预览"
+END
+
+STRINGTABLE
+BEGIN
+    ID_APP_ABOUT            "显示程序信息、版本号和版权信息\n关于"
+    ID_APP_EXIT             "退出应用程序；提示保存文档\n退出"
+END
+
+STRINGTABLE
+BEGIN
+    ID_FILE_MRU_FILE1       "打开此文档"
+    ID_FILE_MRU_FILE2       "打开此文档"
+    ID_FILE_MRU_FILE3       "打开此文档"
+    ID_FILE_MRU_FILE4       "打开此文档"
+    ID_FILE_MRU_FILE5       "打开此文档"
+    ID_FILE_MRU_FILE6       "打开此文档"
+    ID_FILE_MRU_FILE7       "打开此文档"
+    ID_FILE_MRU_FILE8       "打开此文档"
+    ID_FILE_MRU_FILE9       "打开此文档"
+    ID_FILE_MRU_FILE10      "打开此文档"
+    ID_FILE_MRU_FILE11      "打开此文档"
+    ID_FILE_MRU_FILE12      "打开此文档"
+    ID_FILE_MRU_FILE13      "打开此文档"
+    ID_FILE_MRU_FILE14      "打开此文档"
+    ID_FILE_MRU_FILE15      "打开此文档"
+    ID_FILE_MRU_FILE16      "打开此文档"
+END
+
+STRINGTABLE
+BEGIN
+    ID_NEXT_PANE            "切换到下一个窗格\n下一窗格"
+    ID_PREV_PANE            "切换回上一个窗格\n上一窗格"
+END
+
+STRINGTABLE
+BEGIN
+    ID_WINDOW_SPLIT         "将活动窗口拆分为多个窗格\n拆分"
+END
+
+STRINGTABLE
+BEGIN
+    ID_EDIT_CLEAR           "清除所选内容\n清除"
+    ID_EDIT_CLEAR_ALL       "清除全部内容\n全部清除"
+    ID_EDIT_COPY            "复制所选内容，将其放入剪贴板\n复制"
+    ID_EDIT_CUT             "剪切所选内容，将其放入剪贴板\n剪切"
+    ID_EDIT_FIND            "查找指定的文本\n查找"
+    ID_EDIT_PASTE           "插入剪贴板内容\n粘贴"
+    ID_EDIT_REPEAT          "重复上一操作\n重复"
+    ID_EDIT_REPLACE         "用其他文本替换特定的文本\n替换"
+    ID_EDIT_SELECT_ALL      "选定整个文档\n全选"
+    ID_EDIT_UNDO            "撤消上一操作\n撤消"
+    ID_EDIT_REDO            "重做上次撤消的操作\n重做"
+END
+
+STRINGTABLE
+BEGIN
+    ID_VIEW_TOOLBAR         "显示或隐藏工具栏\n切换工具栏"
+    ID_VIEW_STATUS_BAR      "显示或隐藏状态栏\n切换状态栏"
+END
+
+STRINGTABLE
+BEGIN
+    AFX_IDS_SCSIZE          "更改窗口大小"
+    AFX_IDS_SCMOVE          "更改窗口位置"
+    AFX_IDS_SCMINIMIZE      "将窗口缩小成图标"
+    AFX_IDS_SCMAXIMIZE      "将窗口放大到最大尺寸"
+    AFX_IDS_SCNEXTWINDOW    "切换到下一个文档窗口"
+    AFX_IDS_SCPREVWINDOW    "切换到上一个文档窗口"
+    AFX_IDS_SCCLOSE         "关闭活动窗口并提示保存文档"
+END
+
+STRINGTABLE
+BEGIN
+    AFX_IDS_SCRESTORE       "将窗口恢复到正常大小"
+    AFX_IDS_SCTASKLIST      "激活任务列表"
+END
+
+STRINGTABLE
+BEGIN
+    AFX_IDS_PREVIEW_CLOSE   "关闭打印预览模式\n取消预览"
+END
+
+STRINGTABLE
+BEGIN
+    ID_VIEW_SHAPETOOL       "显示/隐藏图形栏"
+    ID_PENCIL               "设置为铅笔"
+    ID_LIGHTPEN             "设置为荧光笔"
+END
+
+STRINGTABLE
+BEGIN
+    ID_LINE_WIDTH_SETTING   "选择线的粗细"
+    ID_COLOR                "选择线的颜色"
+END
+
+STRINGTABLE
+BEGIN
+    IDM_FONT                "选择文字的字体"
+END
+
+STRINGTABLE
+BEGIN
+    IDM_ADD_TEXT            "光标位置插入文本"
+END
+
+STRINGTABLE
+BEGIN
+    IDM_PAINT_BUCKET        "油漆桶填充区域颜色"
+    ID_CELLPEN              "设置为圆珠笔"
+    ID_BRUSHPEN             "设置为毡尖笔"
+END
+
+STRINGTABLE
+BEGIN
+    ID_UNDO                 "撤销"
+    ID_REDO                 "重做"
+END
+
+#endif    // 中文(简体，中国) resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+
+#ifndef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 3 resource.
+//
+#define _AFX_NO_OLE_RESOURCES
+#define _AFX_NO_TRACKER_RESOURCES
+#define _AFX_NO_PROPERTY_RESOURCES
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_CHS)
+LANGUAGE 4, 2
+#include "res\WTImage.rc2"  // 非 Microsoft Visual C++ 编辑的资源
+#include "l.CHS\afxres.rc"      // 标准组件
+#include "l.CHS\afxprint.rc"    // 打印/打印预览资源
+#endif
+
+/////////////////////////////////////////////////////////////////////////////
+#endif    // not APSTUDIO_INVOKED
+
